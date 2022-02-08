@@ -380,6 +380,41 @@
     }
     ?>
     </div>
+    <h2>Домашня работа по массивам</h2>
+    <div class="Zadanie">
+        <h2>Задание</h2>
+        Существует массив с информацией о жителях города. У каждого жителя есть свой уникальный идентификатор(id).
+        Также есть массив преступников, в которых хранятся id жителей, относящихся к данной категории граждан. необходимо
+        определить, является ли житель преступником. Результат отобразить в следующем виде: Житель Фамилия - является/не является
+    </div>
+    <div class="Otver">
+        <?php 
+        $persons=array(
+            array ('id'=> 1, 'firstname'=> 'Иванов'),
+            array ('id'=> 2, 'firstname'=> 'Петров'),
+            array ('id'=> 3, 'firstname'=> 'Сидоров'),
+            array ('id'=> 14, 'firstname'=> 'Грава'),
+            array ('id'=> 228, 'firstname'=> 'Йошида'),
+            array ('id'=> 12, 'firstname'=> 'Канзачаков'),
+            array ('id'=> 88, 'firstname'=> 'Юдин'),
+            array ('id'=> 91, 'firstname'=> 'Юдина'),
+            array ('id'=> 42, 'firstname'=> 'Мельников'),
+            array ('id'=> 9, 'firstname'=> 'Маркин')
+            );
+            echo "<pre>";
+            print_r($persons);
+            echo "</pre>";
+
+            $criminalgang = array(1, 228, 12, 456, 4, 15);
+            foreach($persons as $p){
+                if(in_array($p['id'], $criminalgang)){
+                echo "ID = ".$p['id']." Фамилия: ".$p['firstname']." - является преступником <br>";
+                }else{
+                echo "ID = ".$p['id']." Фамилия: ".$p['firstname']." - не является преступником <br>";
+                }
+            }  
+        ?>
+    </div>
     <H1>Работа с массивами</H1>
     <div class="Zadanie">
         <h2>Задание №1</h2>
