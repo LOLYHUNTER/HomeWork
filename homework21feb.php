@@ -7,10 +7,11 @@
     <title>Document</title>
 </head>
 <body>
-<form action="homework21feb.php" method="POST">
+<form action="" method="POST">
   <p>Введите ваше имя:<br>
-    Имя: <input type="text" name="firstname" value="Введите ваше имя"><br>
+    Имя: <input type="text" name="firstname" placeholder="Введите ваше имя"><br>
     <input type="submit" value="Отправить">
+</form>
     <?php 
         if (!empty($_POST["firstname"])) {
             echo "Здравствуйте, ".$_POST["firstname"];
