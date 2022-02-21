@@ -613,12 +613,6 @@
              echo '<pre>';
              $res= ($arr/4);
              print_r ($res);
-             
-             
-            
-           
-         
-
          ?>
     </div>
 </body>

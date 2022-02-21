@@ -13,7 +13,7 @@
     <input type="submit" value="Отправить">
     <?php 
         if (!empty($_POST["firstname"])) {
-            echo "Привет, ".$_POST["firstname"];
+            echo "Здравствуйте, ".$_POST["firstname"];
  } else { 
             echo "Введите имя";
     }
